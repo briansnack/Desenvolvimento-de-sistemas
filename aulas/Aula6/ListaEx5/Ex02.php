@@ -37,7 +37,6 @@ function dataPorExtenso($data){
     return $dataFormatada;
 }
 
-if($_SERVER["RESQUEST_METOD"] == "GET"){
     if (isset($_GET['num1'])) {
         $data = $_GET['num1'];
 
@@ -49,5 +48,5 @@ if($_SERVER["RESQUEST_METOD"] == "GET"){
             echo "Data inválida!";
         }
     }
-}
+
 ?>
