@@ -37,7 +37,8 @@ function dataPorExtenso($data){
     return $dataFormatada;
 }
 
-if (!isset($_GET['num1'])) {
+// Verifica se o formulário foi enviado
+if (!empty($_GET['num1'])) {
     $data = $_GET['num1'];
 
     $dataPorExtenso = dataPorExtenso($data);
@@ -49,5 +50,6 @@ if (!isset($_GET['num1'])) {
     }
 }
 
+// Exibe o formulário mesmo se não tiver sido enviado
 formulario("Informe a data:", 1);
 ?>
