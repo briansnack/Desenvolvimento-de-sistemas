@@ -1,6 +1,6 @@
 <?php
 function formulario($mtd, ...$camposForm){
-    echo "<form action=\     "\" method=\"{$mtd}\">";
+    echo "<form action=\"\" method=\"{$mtd}\">";
 
     for ($i= 0; $i < count($camposForm); $i++){
     $strCampo = ucfirst(strtolower($camposForm[$i]));
