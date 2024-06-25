@@ -33,10 +33,10 @@
                 }
             }
 
-            require_once "./Controllers/$this->controller.php";
-            $this->controller = new $this->controller;
-            // $varObj = new ListaController;
-            call_user_func_array([$this->controller, $this->funcao], $this->parametros);
+            // require_once "./Controllers/$this->controller.php";
+            // $this->controller = new $this->controller;
+            // // $varObj = new ListaController;
+            // call_user_func_array([$this->controller, $this->funcao], $this->parametros);
         }
 
         function getUrl(){

@@ -1,5 +1,5 @@
 <?php 
-        $banco = new mysqli("localhost", "root", "", "db_aula_segunda");    
+        $banco = new mysqli("localhost", "root", "", "aula_php");    
        
         /*function createOnDB($into, $values){
             global $banco;
